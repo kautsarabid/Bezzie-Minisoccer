@@ -11,9 +11,11 @@ export default function NavBody({ logo }) {
 	};
 
 	const listNavItems = [
-		{ label: "About", url: "#" },
+		{ label: "Home", url: "#" },
+		{ label: "Service", url: "#service" },
+		{ label: "Facility", url: "#facility" },
+		{ label: "Pricelist", url: "#pricelist" },
 		{ label: "Gallery", url: "#gallery" },
-		{ label: "Team", url: "#team" },
 		{ label: "Contact", url: "#contact" },
 	];
 
