@@ -5,10 +5,10 @@ import FacilityBody from "./pages/Facility/FacilityBody";
 import PriceListBody from "./pages/Pricelist/PriceListBody";
 import GalleryBody from "./pages/Gallery/GalleryBody";
 import TeamBody from "./pages/Team/TeamBody";
+import FooterBody from "./pages/Footer/FooterBody";
 
 // Asset
 import logoBrand from "./assets/logo.webp";
-import FooterBody from "./pages/Footer/FooterBody";
 
 export default function App() {
 	return (
@@ -24,7 +24,7 @@ export default function App() {
 					<FacilityBody />
 					<PriceListBody />
 					<GalleryBody />
-					<TeamBody />
+					{/* <TeamBody /> */}
 				</section>
 
 				<footer>
