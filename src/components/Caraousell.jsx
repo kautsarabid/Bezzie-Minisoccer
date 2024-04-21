@@ -11,19 +11,8 @@ import "swiper/css/navigation";
 // import required modules
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 
-// asset image
-import ImgPerson1 from "../assets/team/person1.jpg";
-import ImgPerson2 from "../assets/team/person2.jpg";
-import ImgPerson3 from "../assets/team/person3.jpg";
-import ImgPerson4 from "../assets/team/person4.jpg";
-
-export default function App() {
-	const slidesData = [
-		{ index: 1, content: ImgPerson1 },
-		{ index: 2, content: ImgPerson2 },
-		{ index: 3, content: ImgPerson3 },
-		{ index: 4, content: ImgPerson4 },
-	];
+export default function Caraousell({ items }) {
+	// const { title, content, imageTeam } = props;
 
 	return (
 		<>
@@ -44,33 +33,26 @@ export default function App() {
 				modules={[EffectCoverflow, Pagination, Navigation]}
 				className="mySwiper px-5 "
 			>
-				{slidesData.map((slide, index) => (
-					<SwiperSlide className="w-fit my-4 rounded-md border" key={index}>
-						<CustomSlide index={slide.index} content={slide.content} />
+				{items.map((item, index) => (
+					<SwiperSlide key={index} className="w-fit my-4 rounded-md border">
+						<div className="shadow-md rounded-md relative h-[500px] overflow-hidden">
+							{item.img && (
+								<img
+									src={item.img}
+									alt={`Foto ${item.title}`}
+									className="rounded-md  h-full bg-cover bg-center"
+								/>
+							)}
+
+							<div className="absolute bottom-0 text-white w-full px-2 py-3 rounded-md bg-shadow">
+								<h3 className="font-bold">{item.title}</h3>
+								<p className="font-semibold">{item.description}</p>
+								<p className="">{item.job}</p>
+							</div>
+						</div>
 					</SwiperSlide>
 				))}
 			</Swiper>
 		</>
-	);
-}
-
-function CustomSlide(props) {
-	const { index, content } = props;
-	return (
-		<div
-			key={index}
-			className="shadow-md rounded-md relative h-[500px] overflow-hidden"
-		>
-			<img
-				src={content}
-				alt="Foto Team"
-				className="rounded-md  h-full bg-cover bg-center"
-			/>
-
-			<div className="absolute bottom-0 text-white w-full px-2 py-3 rounded-md bg-shadow">
-				<h5 className="font-bold">Nama</h5>
-				<p className="font-semibold">Job</p>
-			</div>
-		</div>
 	);
 }
