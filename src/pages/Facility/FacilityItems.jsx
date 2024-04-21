@@ -1,10 +1,10 @@
 export default function FacilityItems({ items }) {
 	return (
-		<>
+		<div className="bg-slate-500" id="facility">
 			{items.map((item, index) => (
 				<div
 					key={index}
-					className="flex mb-1 h-[450px] overflow-hidden odd:bg-primary  odd:text-white odd:flex-row-reverse"
+					className="flex mb-1 h-[450px] overflow-hidden odd:bg-primary even:bg-white odd:text-white odd:flex-row-reverse"
 				>
 					<div className="w-1/2  flex justify-center items-center">
 						<img
@@ -24,6 +24,6 @@ export default function FacilityItems({ items }) {
 					</div>
 				</div>
 			))}
-		</>
+		</div>
 	);
 }

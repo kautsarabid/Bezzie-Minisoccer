@@ -27,10 +27,10 @@ export default function ServiceBody() {
 		},
 	];
 	return (
-		<>
+		<div id="service">
 			<h3 className="font-display text-center">Service</h3>
 
 			<ServiceList items={itemsService} />
-		</>
+		</div>
 	);
 }
