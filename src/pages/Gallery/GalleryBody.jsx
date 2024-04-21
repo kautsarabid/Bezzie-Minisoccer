@@ -42,7 +42,7 @@ export default function GalleryBody() {
 
 			<div className="p-2 grid grid-cols-2 md:grid-cols-4 gap-2 md:p-4">
 				<div className="h-15 font-semibold md:col-start-4 md:row-start-2 md:flex">
-					<span className="self-center">Media Partner : PBA</span>
+					<span className="self-center">Persfektif : Potret Bola Aceh</span>
 				</div>
 
 				<div className="h-15 font-semibold md:col-start-2 md:row-start-2 md:flex">
