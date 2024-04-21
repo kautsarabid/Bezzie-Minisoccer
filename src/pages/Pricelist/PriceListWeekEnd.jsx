@@ -3,7 +3,10 @@ import Card from "../../components/Card";
 export default function PriceListWeekEnd() {
 	return (
 		<>
-			<div className="flex justify-center items-center gap-10 flex-wrap  text-center mb-10">
+			<h5 className="text-4xl uppercase text-center font-semibold bg-secondary  text-white py-4 mb-2 lg:hidden">
+				Weekend
+			</h5>
+			<div className="flex flex-wrap justify-center items-center gap-10  text-center mb-10">
 				<Card
 					variant2={"card-pricelist"}
 					variant3={"mb-4 font-bold text-5xl"}

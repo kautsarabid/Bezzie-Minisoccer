@@ -1,32 +1,22 @@
-import { useState } from "react";
-import PriceListWeekDay from "./PriceListWeekDay";
-import PriceListWeekEnd from "./PriceListWeekEnd";
-import ButtonWeekDay from "./ButtonWeekDay";
-import ButtonWeekEnd from "./ButtonWeekEnd";
+import PriceListDesktop from "./PriceListDesktop";
+import PriceListMobile from "./PriceListMobile";
 
 export default function PriceListBody() {
-	const [currentSection, setCurrentSection] = useState("weekday");
-
-	const handleSectionChange = (section) => {
-		setCurrentSection(section);
-	};
-
 	return (
 		<>
-			<div className="mb-6  transition-all duration-100">
+			<div className="mb-6 transition-all duration-100">
 				<h3 className="text-center font-display">Pricelist</h3>
 
-				{currentSection === "weekday" ? (
-					<div>
-						<PriceListWeekDay />
-						<ButtonWeekDay handleSectionChange={handleSectionChange} />
+				<div className="container mx-auto">
+					<div className="lg:hidden">
+						{/* Ini akan tampil hanya pada layar mobile */}
+						<PriceListMobile />
 					</div>
-				) : (
-					<div>
-						<PriceListWeekEnd />
-						<ButtonWeekEnd handleSectionChange={handleSectionChange} />
+					<div className="hidden lg:block">
+						{/* Ini akan tampil hanya pada layar desktop */}
+						<PriceListDesktop />
 					</div>
-				)}
+				</div>
 			</div>
 		</>
 	);
