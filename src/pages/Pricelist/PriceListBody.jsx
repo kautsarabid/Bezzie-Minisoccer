@@ -1,3 +1,4 @@
+import AdditionalPriceList from "./AdditionalPriceList";
 import PriceListDesktop from "./PriceListDesktop";
 import PriceListMobile from "./PriceListMobile";
 
@@ -15,6 +16,10 @@ export default function PriceListBody() {
 						<PriceListDesktop />
 					</div>
 				</div>
+
+				<hr className="mx-4 my-5" />
+
+				<AdditionalPriceList />
 			</div>
 		</>
 	);
