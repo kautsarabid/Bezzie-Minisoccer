@@ -1,17 +1,33 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { byPrefixAndName } from "@awesome.me/kit-KIT_CODE/icons";
-
 export default function List(props) {
-	const { title, content, classCSSTitle, classCssContent } = props;
+	const { children, classContainer } = props;
 	return (
 		<>
-			<ul>
-				<h6 className={`${classCSSTitle} font-bold`}>{title}</h6>
-
-				<li className={`hover:text-slate-300 py-1 text-lg ${classCssContent}`}>
-					<a href="#">{content}</a>
-				</li>
-			</ul>
+			<div className={classContainer}>{children}</div>
 		</>
 	);
 }
+
+function Title(props) {
+	const { classTitle, children } = props;
+	return <h6 className={`${classTitle} pb-2`}>{children}</h6>;
+}
+
+function Icon(props) {
+	const { classIcon, children } = props;
+	return <i className={`${classIcon} font-bold`}>{children}</i>;
+}
+
+function Description(props) {
+	const { classDescription, children, link } = props;
+	return (
+		<ul>
+			<li className={`${classDescription} py-2`}>
+				<a href={link}>{children}</a>
+			</li>
+		</ul>
+	);
+}
+
+List.Title = Title;
+List.Icon = Icon;
+List.Description = Description;
