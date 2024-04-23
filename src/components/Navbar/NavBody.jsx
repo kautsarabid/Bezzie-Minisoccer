@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import NavListMobile from "./NavListMobile";
 import NavListDesktop from "./NavListDesktop";
 import NavHamburgerButton from "./NavHamburgerButton";
+import ImageLogo from "../../assets/logo.webp";
 
-export default function NavBody({ logo }) {
+export default function NavBody() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggleHamburgerBtn = () => {
@@ -24,7 +25,7 @@ export default function NavBody({ logo }) {
 			<nav className="fixed w-full bg-primary py-3 px-4 z-50 shadow-md">
 				<div className="max-w-7xl flex items-center justify-between ">
 					<a href="/">
-						<img src={logo} alt="Logo Bezzie" width={50} />
+						<img src={ImageLogo} alt="Logo Bezzie" width={50} />
 					</a>
 					<NavHamburgerButton onClick={toggleHamburgerBtn} isOpen={isOpen} />
 					<NavListMobile items={listNavItems} isOpen={isOpen} />
