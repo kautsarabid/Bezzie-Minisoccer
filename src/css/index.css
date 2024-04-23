@@ -32,6 +32,13 @@
 	h6 {
 		font-size: 25px;
 	}
+	.primary {
+		color: #031c33;
+	}
+
+	.secondary {
+		color: #b32c19;
+	}
 
 	.bg-primary {
 		background-color: #031c33;
@@ -67,6 +74,10 @@
 		position: relative;
 		z-index: 1;
 	}
+
+	.about p {
+		margin-bottom: 1rem;
+	}
 }
 
 @layer components {
@@ -78,10 +89,11 @@
 	}
 
 	.card-pricelist {
-		@apply px-14 rounded-md shadow-lg h-[75vh] flex flex-col justify-center items-center;
+		@apply px-14 rounded-md shadow-custom h-[75vh] flex flex-col pt-24 items-center;
 	}
 
-	.card-pricelist p {
+	.card-pricelist p,
+	.optional-pricelist p {
 		@apply mb-4 text-[21px];
 	}
 
@@ -128,5 +140,23 @@
 
 	.bg-shadow {
 		border-image: fill 0 linear-gradient(#0002, #000);
+	}
+
+	.bg-paper {
+		background-image: url("../assets/paper-texture.jpg");
+		background-position: center;
+		background-size: cover;
+	}
+
+	.inset-shadow-custom {
+		box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+	}
+
+	.shadow-custom {
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.icon-size {
+		@apply text-4xl inline-block rounded-full border p-1;
 	}
 }
