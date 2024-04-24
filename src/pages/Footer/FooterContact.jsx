@@ -10,7 +10,7 @@ export default function FooterContact() {
 	)}`;
 
 	return (
-		<div className="z-10">
+		<div className="z-10 relative">
 			<List.Title classTitle={"font-display text-4xl"}>Contact</List.Title>
 
 			<div className="flex flex-col gap-5">

@@ -14,7 +14,7 @@ export default function FooterBody() {
 			<img
 				src={LogoBezzie}
 				alt="Logo Bezzie"
-				className="mb-5 m-auto xl:w-[25%] z-20"
+				className="mb-5 m-auto xl:w-[25%] z-10"
 			/>
 			<hr className="mx-3 my-4 xl:hidden" />
 
@@ -26,7 +26,9 @@ export default function FooterBody() {
 
 			<FooterContact />
 
-			{/* <div className="absolute top-0 left-0 mix-blend-multiply bg-paper w-full h-full z-0"></div> */}
+			<div className="absolute top-0 left-0 w-full h-full">
+				<div className="mix-blend-multiply bg-paper w-full h-full"></div>
+			</div>
 		</div>
 	);
 }

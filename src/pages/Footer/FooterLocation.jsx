@@ -3,7 +3,7 @@ import List from "../../components/List";
 
 export default function FooterLocation() {
 	return (
-		<div className="xl:w-[30rem] z-10 sm:z-50">
+		<div className="xl:w-[30rem] z-10 relative">
 			<List title={"Location"} />
 			<List>
 				<List.Title classTitle={"font-display text-4xl"}>Location</List.Title>
