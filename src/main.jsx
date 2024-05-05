@@ -9,6 +9,7 @@ import Rules from "./pages/Information/Rules.jsx";
 import Faq from "./pages/Information/faq.jsx";
 import PriceListBody from "./pages/Pricelist/PriceListBody.jsx";
 import FacilityBody from "./pages/Facility/FacilityBody.jsx";
+import NotFoundPage from "./pages/NotFoundPage.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 				<Route path="/facility" element={<FacilityBody />} />
 				<Route path="/rules" element={<Rules />} />
 				<Route path="/faq" element={<Faq />} />
+				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
