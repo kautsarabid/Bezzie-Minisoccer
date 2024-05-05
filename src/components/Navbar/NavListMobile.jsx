@@ -1,4 +1,6 @@
-export default function NavListMobile({ items, isOpen }) {
+import NavigationBar from "./NavigationBar";
+
+export default function NavListMobile({ items, isOpen, type }) {
 	return (
 		<div
 			className={
@@ -7,15 +9,7 @@ export default function NavListMobile({ items, isOpen }) {
 					: "hidden"
 			}
 		>
-			{items.map((item, index) => (
-				<a
-					className="block px-4 py-4 text-white hover:text-gray-300 font-base"
-					key={index}
-					href={item.url}
-				>
-					{item.label}
-				</a>
-			))}
+			<NavigationBar type={type} items={items} />
 		</div>
 	);
 }
