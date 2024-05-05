@@ -76,7 +76,7 @@
 	}
 
 	.about p {
-		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 }
 
@@ -92,8 +92,7 @@
 		@apply px-14 rounded-md shadow-custom h-[75vh] flex flex-col pt-24 items-center;
 	}
 
-	.card-pricelist p,
-	.optional-pricelist p {
+	.card-pricelist p {
 		@apply mb-4 text-[21px];
 	}
 
@@ -143,7 +142,8 @@
 	}
 
 	.bg-paper {
-		background-image: url("../assets/paper-texture.jpg");
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+			url("../assets/paper-texture.jpg");
 		background-position: center;
 		background-size: cover;
 	}
