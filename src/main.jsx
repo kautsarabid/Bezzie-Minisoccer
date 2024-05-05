@@ -4,9 +4,11 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./css/index.css";
 
-import HeroBody from "./pages/Hero/HeroBody.jsx";
 import About from "./pages/Information/About.jsx";
 import Rules from "./pages/Information/Rules.jsx";
+import Faq from "./pages/Information/faq.jsx";
+import PriceListBody from "./pages/Pricelist/PriceListBody.jsx";
+import FacilityBody from "./pages/Facility/FacilityBody.jsx";
 
 const router = createBrowserRouter([
 	{
@@ -18,8 +20,20 @@ const router = createBrowserRouter([
 		element: <About />,
 	},
 	{
+		path: "/pricelist",
+		element: <PriceListBody />,
+	},
+	{
+		path: "/fasilitas",
+		element: <FacilityBody />,
+	},
+	{
 		path: "/rules",
 		element: <Rules />,
+	},
+	{
+		path: "/faq",
+		element: <Faq />,
 	},
 ]);
 
