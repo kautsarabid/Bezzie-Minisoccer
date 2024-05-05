@@ -3,12 +3,12 @@ import NavBody from "../../components/Navbar/NavBody";
 export default function About() {
 	return (
 		<div className="bg-paper h-fit">
-			<header className="absolute top-0 left-0">
+			<header className="absolute w-full top-0 left-0">
 				<NavBody />
 			</header>
 
 			<main className="pt-20 h-full">
-				<section className="about">
+				<section className="about h-fit">
 					<h4 className="font-display text-center uppercase">
 						Bezzie minisoccer
 					</h4>
