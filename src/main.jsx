@@ -1,44 +1,26 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./css/index.css";
 
 import About from "./pages/Information/About.jsx";
 import Rules from "./pages/Information/Rules.jsx";
-import Faq from "./pages/Information/faq.jsx";
+import Faq from "./pages/Information/Faq.jsx";
 import PriceListBody from "./pages/Pricelist/PriceListBody.jsx";
 import FacilityBody from "./pages/Facility/FacilityBody.jsx";
 
-const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <App />,
-	},
-	{
-		path: "/about",
-		element: <About />,
-	},
-	{
-		path: "/pricelist",
-		element: <PriceListBody />,
-	},
-	{
-		path: "/fasilitas",
-		element: <FacilityBody />,
-	},
-	{
-		path: "/rules",
-		element: <Rules />,
-	},
-	{
-		path: "/faq",
-		element: <Faq />,
-	},
-]);
-
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<App />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/pricelist" element={<PriceListBody />} />
+				<Route path="/facility" element={<FacilityBody />} />
+				<Route path="/rules" element={<Rules />} />
+				<Route path="/faq" element={<Faq />} />
+			</Routes>
+		</BrowserRouter>
 	</React.StrictMode>
 );
