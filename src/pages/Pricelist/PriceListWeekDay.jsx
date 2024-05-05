@@ -51,12 +51,14 @@ export default function PriceListWeekDay() {
 				<Card classCSSContainer={"card-pricelist relative"}>
 					<Card.Title classCSSTitle={"mb-4 font-bold text-5xl"}>
 						{" "}
-						850K{" "}
+						400K{" "}
 					</Card.Title>
 
-					<Card.Description>16.00 - 18.00</Card.Description>
-					<Card.Description>20.00 - 22.00</Card.Description>
-					<Card.Description>22.00 - 24.00</Card.Description>
+					<Card.Description>16.00 - 17.00</Card.Description>
+					<Card.Description>17.00 - 18.00</Card.Description>
+					<Card.Description>20.00 - 21.00</Card.Description>
+					<Card.Description>21.00 - 23.00</Card.Description>
+					<Card.Description>23.00 - 24.00</Card.Description>
 
 					<Card.AdditionalStyle
 						classCSSAdd={
@@ -65,14 +67,6 @@ export default function PriceListWeekDay() {
 					>
 						Night
 					</Card.AdditionalStyle>
-					{/* 
-					<Card.AdditionalStyle
-						classCSSAdd={
-							"absolute top-0 right-0 bg-yellow-400 px-3 py-1 rounded-md shadow-inner text-white font-bold"
-						}
-					>
-						Most Book
-					</Card.AdditionalStyle> */}
 				</Card>
 			</div>
 		</>

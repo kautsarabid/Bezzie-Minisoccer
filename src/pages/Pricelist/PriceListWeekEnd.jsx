@@ -52,23 +52,17 @@ export default function PriceListWeekEnd() {
 				<Card
 					classCSSContainer={"card-pricelist relative"}
 					variant3={"mb-4 font-bold text-5xl"}
-					title={"900K"}
-					description1={"16.00 - 18.00"}
-					description2={"20.00 - 22.00"}
-					description3={"22.00 - 24.00"}
-					newStyle={"⭐"}
-					styleSpan={
-						"absolute bg-yellow-400 -top-4 -right-4 border rounded-full p-2"
-					}
 				>
 					<Card.Title classCSSTitle={"mb-4 font-bold text-5xl"}>
 						{" "}
-						900K{" "}
+						450K{" "}
 					</Card.Title>
 
-					<Card.Description>16.00 - 18.00</Card.Description>
-					<Card.Description>20.00 - 22.00</Card.Description>
-					<Card.Description>22.00 - 24.00</Card.Description>
+					<Card.Description>16.00 - 17.00</Card.Description>
+					<Card.Description>17.00 - 18.00</Card.Description>
+					<Card.Description>20.00 - 21.00</Card.Description>
+					<Card.Description>21.00 - 23.00</Card.Description>
+					<Card.Description>23.00 - 24.00</Card.Description>
 
 					<Card.AdditionalStyle
 						classCSSAdd={
