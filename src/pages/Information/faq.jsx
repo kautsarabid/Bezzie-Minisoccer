@@ -42,7 +42,7 @@ export default function Faq() {
 					</ul>
 					Lebih detail dapat dilihat di{" "}
 					<Link
-						to={"/fasilitas"}
+						to={"/facility"}
 						className="text-[#b32c19] hover:text-[#031c33] font-bold"
 					>
 						Fasilitas
