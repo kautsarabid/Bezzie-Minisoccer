@@ -15,8 +15,8 @@ export default function FooterLocation() {
 			</List>
 
 			<Button
-				classCSS={"border  px-4 py-2 hover:bg-secondary"}
-				link={"https://maps.app.goo.gl/hiMKnaWoF3CMcrDd8"}
+				classCSS={"border px-4 py-2 hover:bg-secondary"}
+				onClick={() => window.open("https://maps.app.goo.gl/hiMKnaWoF3CMcrDd8")}
 			>
 				{" "}
 				GMAPS{" "}

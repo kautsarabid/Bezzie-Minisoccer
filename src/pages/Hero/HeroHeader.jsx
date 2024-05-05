@@ -22,9 +22,7 @@ export default function HeroHeader() {
 			</div>
 
 			<Button
-				link={whatsAppURL}
-				target={"_blank"}
-				rel={"noopener noreferrer"}
+				onClick={() => window.open(whatsAppURL)}
 				classCSS={
 					"px-[36px] py-[15px] text-white bg-secondary relative hover:btn"
 				}
