@@ -14,11 +14,11 @@ function Title(props) {
 }
 
 function Description(props) {
-	const { children } = props;
+	const { children, classCSSDes } = props;
 
 	return (
 		<>
-			<p>{children}</p>
+			<p className={classCSSDes}>{children}</p>
 		</>
 	);
 }
