@@ -6,7 +6,7 @@ import "./css/index.css";
 
 import About from "./pages/Information/About.jsx";
 import Rules from "./pages/Information/Rules.jsx";
-import Faq from "./pages/Information/Faq.jsx";
+import Faq from "./pages/Information/faq.jsx";
 import PriceListBody from "./pages/Pricelist/PriceListBody.jsx";
 import FacilityBody from "./pages/Facility/FacilityBody.jsx";
 
