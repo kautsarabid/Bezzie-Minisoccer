@@ -2,8 +2,8 @@ import NavBody from "../../components/Navbar/NavBody";
 
 export default function About() {
 	return (
-		<div className="bg-paper h-fit">
-			<header className="absolute w-full top-0 left-0">
+		<>
+			<header>
 				<NavBody />
 			</header>
 
@@ -71,6 +71,6 @@ export default function About() {
 					{/* <div className="absolute top-0 left-0 mix-blend-multiply bg-paper w-full h-full z-0 brightness-75"></div> */}
 				</section>
 			</main>
-		</div>
+		</>
 	);
 }
