@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavListMobile from "./NavListMobile";
 import NavListDesktop from "./NavListDesktop";
-import NavHamburgerButton from "./NavHamburgerButton";
-import ImageLogo from "../../assets/logo.webp";
-import { Link } from "react-router-dom";
+
+import { useCycle } from "framer-motion";
 
 export default function NavBody() {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, toggleOpen] = useCycle(false, true);
+	const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
-	const toggleHamburgerBtn = () => {
-		setIsOpen(!isOpen);
-	};
+	useEffect(() => {
+		const handleResize = () => {
+			setIsMobile(window.innerWidth <= 1024);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
 
 	let type = "default";
 	if (
@@ -30,18 +38,16 @@ export default function NavBody() {
 		{ label: "Contact", url: "#contact" },
 	];
 
-	return (
-		<div>
-			<nav className="fixed top-0 left-0 w-full bg-primary py-3 px-4 z-50 shadow-md">
-				<div className="max-w-7xl flex items-center justify-between ">
-					<Link to="/">
-						<img src={ImageLogo} alt="Logo Bezzie" width={50} />
-					</Link>
-					<NavHamburgerButton onClick={toggleHamburgerBtn} isOpen={isOpen} />
-					<NavListMobile type={type} items={listNavItems} isOpen={isOpen} />
-					<NavListDesktop type={type} items={listNavItems} />
-				</div>
-			</nav>
-		</div>
-	);
+	if (isMobile) {
+		return (
+			<NavListMobile
+				type={type}
+				items={listNavItems}
+				isOpen={isOpen}
+				onClick={() => toggleOpen()}
+			/>
+		);
+	} else {
+		return <NavListDesktop type={type} items={listNavItems} />;
+	}
 }
