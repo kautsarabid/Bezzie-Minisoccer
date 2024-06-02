@@ -55,7 +55,11 @@ export default function NavListMobile({ items, type, isOpen, onClick }) {
 
 				<motion.div
 					variants={variants}
-					className="flex flex-col items-center justify-center lg:hidden absolute top-0 p-[25px] right-0 w-[300px] h-screen"
+					className={
+						isOpen
+							? "flex flex-col items-center justify-center lg:hidden absolute top-0 p-[25px] right-0 w-[300px] h-screen"
+							: "hidden"
+					}
 				>
 					<NavigationBar type={type} items={items} />
 				</motion.div>

@@ -3,7 +3,7 @@ import NavBody from "../../components/Navbar/NavBody";
 export default function About() {
 	return (
 		<>
-			<header>
+			<header className="relative">
 				<NavBody />
 			</header>
 
@@ -23,15 +23,14 @@ export default function About() {
 									Banda Aceh, Beurawe
 								</a>
 							</span>
-							. yang didirikan pada bulan [TERBENTUKNYA BEZZIE] dengan visi dan
-							misi. Memberikan fasilitas yang berkualitas dan aman bagi para
-							pemain sepak bola mini dari berbagai kalangan usia dan latar
-							belakang, Mendorong semangat persaingan yang sehat dan sportivitas
-							dalam setiap pertandingan yang diadakan di tempat kami,
-							Menyelenggarakan acara dan kegiatan sosial yang menghubungkan
-							komunitas, mempererat ikatan antaranggota, dan mempromosikan
-							nilai-nilai positif seperti kerjasama, integritas, dan
-							keberagaman..
+							. yang didirikan pada bulan 15 Juni 2023 dengan visi dan misi.
+							Memberikan fasilitas yang berkualitas dan aman bagi para pemain
+							sepak bola mini dari berbagai kalangan usia dan latar belakang,
+							Mendorong semangat persaingan yang sehat dan sportivitas dalam
+							setiap pertandingan yang diadakan di tempat kami, Menyelenggarakan
+							acara dan kegiatan sosial yang menghubungkan komunitas, mempererat
+							ikatan antaranggota, dan mempromosikan nilai-nilai positif seperti
+							kerjasama, integritas, dan keberagaman.
 						</p>
 						<p>
 							Di Bezzie, kami mengutamakan kualitas dalam setiap aspek layanan

@@ -18,11 +18,12 @@ const variants = {
 };
 
 const NavigationBar = ({ type, items }) => {
-	if (type === "special") {
+	if (type == "special") {
 		return (
 			<Link
+				variants={variants}
 				to="/"
-				className={`block px-4 py-3 text-xl text-white  md:border md:rounded-xl font-semibold md:hover:bg-secondary transition-all duration-300`}
+				className="block px-4 py-3 text-xl text-white  lg:border lg:rounded-xl font-semibold lg:hover:bg-secondary  transition-all duration-300"
 			>
 				Back To Home
 			</Link>
