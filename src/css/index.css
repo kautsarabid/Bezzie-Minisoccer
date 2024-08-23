@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply font-base;
+	}
+
+	h1 {
+		font-size: 76px;
+	}
+
+	h2 {
+		font-size: 61px;
+	}
+
+	h3 {
+		font-size: 49px;
+		margin-top: 64px;
+		margin-bottom: 54px;
+	}
+
+	h4 {
+		font-size: 39px;
+	}
+
+	h5 {
+		font-size: 31px;
+	}
+
+	h6 {
+		font-size: 25px;
+	}
+	.primary {
+		color: #031c33;
+	}
+
+	.secondary {
+		color: #b32c19;
+	}
+
+	.bg-primary {
+		background-color: #031c33;
+	}
+
+	.bg-secondary {
+		background-color: #b32c19;
+	}
+
+	.bg-hero {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url("../assets/bg-hero-sec.png");
+		background-position: center;
+		background-size: cover;
+	}
+
+	.background-video {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	#video-background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.content {
+		position: relative;
+		z-index: 1;
+	}
+
+	.about p {
+		margin-top: 1rem;
+	}
+}
+
+@layer components {
+	.btn {
+		/* background-color: #031c33; */
+		/* rotate: -5deg; */
+		box-shadow: 5px 5px #031c33;
+		/* border: solid black; */
+	}
+
+	.card-pricelist {
+		@apply px-14 rounded-md shadow-custom h-[75vh] flex flex-col pt-24 items-center;
+	}
+
+	.card-pricelist p {
+		@apply mb-4 text-[21px];
+	}
+
+	.btn-weekday,
+	.btn-weekend,
+	.btn-weekend-default,
+	.btn-weekday-default {
+		@apply px-20 py-4 rounded-xl font-display text-2xl shadow-md transition-all duration-300;
+	}
+
+	.btn-weekday {
+		@apply bg-blue-950 text-white;
+	}
+
+	.btn-weekend {
+		@apply bg-red-700 text-white;
+	}
+
+	.btn-weekday-default {
+		@apply bg-white text-blue-950 hover:bg-blue-950 hover:text-white;
+	}
+
+	.btn-weekend-default {
+		@apply bg-white text-red-700 hover:text-white hover:bg-red-700;
+	}
+
+	.swiper {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+		height: 300px;
+	}
+
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+	}
+
+	.bg-shadow {
+		border-image: fill 0 linear-gradient(#0002, #000);
+	}
+
+	.bg-paper {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+			url("../assets/paper-texture.jpg");
+		background-position: center;
+		background-size: cover;
+	}
+
+	.inset-shadow-custom {
+		box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+	}
+
+	.shadow-custom {
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.icon-size {
+		@apply text-4xl inline-block rounded-full border p-1;
+	}
+}
