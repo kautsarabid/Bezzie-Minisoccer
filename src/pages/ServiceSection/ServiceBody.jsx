@@ -1,9 +1,7 @@
 import ServiceList from "./ServiceList";
 
 // ICON ASSETS
-import PhoneIcon from "../../assets/icons/Phone2.png";
-import PeopleIcon from "../../assets/icons/People-Hugging.png";
-import RoomIcon from "../../assets/icons/Room2.png";
+import Icon from "../../components/AssetsIcons";
 
 export default function ServiceBody() {
 	const itemsService = [
@@ -11,19 +9,19 @@ export default function ServiceBody() {
 			title: "Fast Respon",
 			description:
 				"Our team at Bezzie Minisoccer is ready to provide the best assistance for any questions or requests you may have.",
-			img: PhoneIcon,
+			img: Icon.Phone,
 		},
 		{
 			title: "Friendly",
 			description:
 				"At Bezzie Minisoccer, our employees are known for their warm and friendly service. ",
-			img: PeopleIcon,
+			img: Icon.People,
 		},
 		{
 			title: "Facility",
 			description:
 				"The services at Bezzie Minisoccer offer excellent facilities to ensure an optimal playing experience for our customers.",
-			img: RoomIcon,
+			img: Icon.Room,
 		},
 	];
 	return (
