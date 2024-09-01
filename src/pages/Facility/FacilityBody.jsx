@@ -7,50 +7,50 @@ export default function FacilityBody() {
 	const itemsFacility = [
 		{
 			id: 1,
-			title: "FIFA Standard Grass",
+			title: "Rumput Berstandar FIFA",
 			description:
-				"The grass facilities utilized by Bezzie Minisoccer adhere to FIFA standards, ensuring top-notch quality and performance for our players. Our fields are meticulously maintained to meet the rigorous requirements set by FIFA, guaranteeing a consistent playing surface that enhances the overall experience for all participants.",
+				"Fasilitas rumput yang digunakan oleh Bezzie Minisoccer memenuhi standar FIFA, memastikan kualitas dan performa terbaik bagi para pemain kami. Lapangan kami dirawat dengan cermat untuk memenuhi persyaratan ketat yang ditetapkan oleh FIFA, menjamin permukaan bermain yang konsisten dan meningkatkan pengalaman keseluruhan bagi semua peserta.",
 			image: Image.Grass,
 		},
 		{
 			id: 2,
-			title: "High Quality Ball",
+			title: "Bola Berkualitas Tinggi",
 			description:
-				"At Bezzie Minisoccer, we ensure that your playing experience is unparalleled by providing excellent ball facilities. Every ball we use is carefully selected to meet the highest quality standards, so you can enjoy consistent control and accuracy in your game. We regularly inspect and replace our balls to ensure their quality remains excellent.",
+				"Di Bezzie Minisoccer, kami memastikan pengalaman bermain Anda tak tertandingi dengan menyediakan fasilitas bola yang unggul. Setiap bola yang kami gunakan dipilih dengan cermat untuk memenuhi standar kualitas tertinggi, sehingga Anda dapat menikmati kontrol dan akurasi yang konsisten dalam permainan Anda. Kami secara rutin memeriksa dan mengganti bola kami untuk memastikan kualitasnya tetap prima.",
 			image: Image.Ball,
 		},
 		{
 			id: 3,
-			title: "Comfortable Prayer Room",
+			title: "Mushola",
 			description:
-				"At Bezzie, we understand the importance of comfort in worship. Our places of worship are well-designed and very comfortable, providing a peaceful and supportive environment for your reflection and worship. We are committed to providing a satisfying worship experience for every visitor",
+				"Di Bezzie, kami memahami pentingnya kenyamanan dalam beribadah. Tempat ibadah kami dirancang dengan baik dan sangat nyaman, menyediakan lingkungan yang tenang dan mendukung untuk refleksi dan ibadah Anda. Kami berkomitmen untuk memberikan pengalaman ibadah yang memuaskan bagi setiap pengunjung.",
 			image: Image.Mushola,
 		},
 		{
 			id: 4,
-			title: "Comfortable Cafetaria",
+			title: "Cafetaria yang Nyaman",
 			description:
-				"At Bezzie, we offer a very comfortable cafeteria facility for our visitors. Designed with a warm and relaxed atmosphere, our cafeteria is the perfect place to unwind after playing futsal or to have a casual chat with friends. Our cafeteria facilities are equipped with comfortable tables and chairs, as well as ample seating areas so you can enjoy your food and drinks leisurely. With a friendly atmosphere and excellent service",
+				"Di Bezzie, kami menawarkan fasilitas cafetaria yang sangat nyaman bagi para pengunjung kami. Dirancang dengan suasana hangat dan santai, cafetaria kami adalah tempat yang sempurna untuk bersantai setelah bermain minisoccer atau sekadar mengobrol santai dengan teman-teman. Fasilitas cafetaria kami dilengkapi dengan meja dan kursi yang nyaman, serta area duduk yang luas sehingga Anda dapat menikmati makanan dan minuman dengan santai. Dengan suasana yang ramah dan pelayanan yang prima.",
 			image: Image.Cafetaria,
 		},
 		{
 			id: 5,
-			title: "High Quality Vest",
+			title: "Rompi Berkualitas Tinggi",
 			description:
-				"At Bezzie, we provide high-quality shin guard rental facilities ready to enhance your futsal playing experience. Each shin guard we offer is carefully selected to ensure its quality, allowing you to play with confidence and comfort. Our shin guards are made from durable and comfortable materials. Rent your shin guards at Bezzie today and feel the difference with our provided facilities!.",
+				"Di Bezzie, kami menyediakan fasilitas penyewaan rompi berkualitas tinggi yang siap meningkatkan pengalaman bermain minisoccer Anda. Setiap rompi yang kami tawarkan dipilih dengan cermat untuk memastikan kualitasnya, sehingga Anda dapat bermain dengan percaya diri dan nyaman.",
 			image: Image.Vest,
 		},
 		{
 			id: 6,
-			title: "Comfortable Shower Room & Toilet",
+			title: "Ruang Mandi & Toilet",
 			description:
-				"At Bezzie, we understand the importance of comfort and cleanliness in our shower room and toilet facilities. That's why we take pride in providing excellent facilities for your use. Our shower rooms are designed to be clean and well-maintained, offering spacious and comfortable spaces for you to freshen up after playing minisoccer.",
+				"Di Bezzie, kami memahami pentingnya kenyamanan dan kebersihan di fasilitas kamar mandi dan toilet kami. Oleh karena itu, kami menyediakan fasilitas yang unggul untuk Anda gunakan. Kamar mandi kami dirancang agar selalu bersih dan terawat, menawarkan ruang yang luas dan nyaman untuk Anda bersih-bersih setelah bermain minisoccer.",
 			image: Image.ShowerRoom,
 		},
 	];
 	return (
 		<>
-			<h3 className="text-center font-display">Facility</h3>
+			<h3 className="text-center font-display">Fasilitas</h3>
 
 			<FacilityItems items={itemsFacility} />
 		</>
