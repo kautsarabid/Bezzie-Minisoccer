@@ -8,19 +8,19 @@ export default function ServiceBody() {
 		{
 			title: "Fast Respon",
 			description:
-				"Our team at Bezzie Minisoccer is ready to provide the best assistance for any questions or requests you may have.",
+				"Kami siap menanggapi setiap permintaan Anda dengan cepat dan efisien, memastikan Anda mendapatkan informasi dan layanan yang Anda butuhkan tanpa penundaan.",
 			img: Icon.Phone,
 		},
 		{
 			title: "Friendly",
 			description:
-				"At Bezzie Minisoccer, our employees are known for their warm and friendly service. ",
+				"Tim kami selalu siap melayani Anda dengan senyuman dan keramahan, menciptakan suasana yang hangat dan menyenangkan setiap kali Anda berinteraksi dengan kami.",
 			img: Icon.People,
 		},
 		{
 			title: "Facility",
 			description:
-				"The services at Bezzie Minisoccer offer excellent facilities to ensure an optimal playing experience for our customers.",
+				"Kami menawarkan fasilitas terbaik untuk mendukung setiap aktivitas Anda. Setiap detail dirancang untuk memberikan pengalaman terbaik dan membuat Anda merasa seperti di rumah sendiri.",
 			img: Icon.Room,
 		},
 	];
