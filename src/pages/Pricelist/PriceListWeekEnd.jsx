@@ -71,14 +71,6 @@ export default function PriceListWeekEnd() {
 					>
 						Malam
 					</Card.AdditionalStyle>
-
-					{/* <Card.AdditionalStyle
-						classCSSAdd={
-							"absolute top-0 right-0 bg-yellow-400 px-3 py-1 rounded-md shadow-inner text-white font-bold"
-						}
-					>
-						Most Book
-					</Card.AdditionalStyle> */}
 				</Card>
 			</div>
 		</>

@@ -7,14 +7,14 @@ export default function ButtonWeekEnd({ handleSectionChange }) {
 				classCSS={"btn-weekday-default cursor-pointer"}
 				onClick={() => handleSectionChange("weekday")}
 			>
-				WEEKDAY
+				HARI BIASA
 			</Button>
 
 			<Button
 				classCSS={"btn-weekend cursor-pointer"}
 				onClick={() => handleSectionChange("weekend")}
 			>
-				WEEKEND
+				HARI LIBUR
 			</Button>
 		</div>
 	);
