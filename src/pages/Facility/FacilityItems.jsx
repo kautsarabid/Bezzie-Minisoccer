@@ -6,13 +6,13 @@ export default function FacilityItems({ items }) {
 					key={index}
 					className="flex mb-1 h-[450px] overflow-hidden odd:bg-primary even:bg-white odd:text-white odd:flex-row-reverse"
 				>
-					<div className="w-1/2  flex justify-center items-center">
+					<div className="w-1/2 flex justify-center items-center">
 						<img
 							src={item.image}
 							alt={item.title}
 							className={`max-w-full md:max-h-fit w-full h-full object-cover ${
 								item.id % 2 !== 0 ? "transform scale-x-[-1]" : ""
-							}`}
+							} ${item.id === 4 ? "object-bottom" : "object-center"}`}
 						/>
 					</div>
 
