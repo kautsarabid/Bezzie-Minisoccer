@@ -6,7 +6,7 @@ export default function FooterLocation() {
 		<div className="xl:w-[30rem] z-10 relative">
 			<List title={"Location"} />
 			<List>
-				<List.Title classTitle={"font-display text-4xl"}>Location</List.Title>
+				<List.Title classTitle={"font-display text-4xl"}>Lokasi</List.Title>
 
 				<List.Description>
 					Jl. H. Zainun No.9, Jurong Meunasah Dayah, Beurawe, Kec. Kuta Alam,

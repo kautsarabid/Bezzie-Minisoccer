@@ -4,7 +4,7 @@ export default function PriceListWeekDay() {
 	return (
 		<>
 			<h5 className="text-4xl uppercase text-center font-semibold bg-primary text-white py-4 mb-6 lg:hidden">
-				WeekDay
+				Hari Biasa
 			</h5>
 			<div className="flex justify-center items-center gap-10 flex-wrap text-center mb-10">
 				<Card classCSSContainer={"card-pricelist  relative"}>
@@ -22,7 +22,7 @@ export default function PriceListWeekDay() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-primary text-white .inset-shadow-custom"
 						}
 					>
-						Morning
+						Pagi
 					</Card.AdditionalStyle>
 				</Card>
 
@@ -44,7 +44,7 @@ export default function PriceListWeekDay() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-primary text-white"
 						}
 					>
-						Noon
+						Siang
 					</Card.AdditionalStyle>
 				</Card>
 
@@ -65,7 +65,7 @@ export default function PriceListWeekDay() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-primary text-white"
 						}
 					>
-						Night
+						Malam
 					</Card.AdditionalStyle>
 				</Card>
 			</div>

@@ -38,7 +38,7 @@ export default function GalleryBody() {
 
 	return (
 		<div id="gallery">
-			<h3 className="font-display text-center">Gallery</h3>
+			<h3 className="font-display text-center">Galeri</h3>
 
 			<div className="p-2 grid grid-cols-2 md:grid-cols-4 gap-2 md:p-4">
 				<div className="h-15 font-semibold md:col-start-4 md:row-start-2 md:flex">

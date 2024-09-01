@@ -6,7 +6,7 @@ export default function PriceListBody() {
 	return (
 		<>
 			<div className="mb-6 transition-all duration-100" id="pricelist">
-				<h3 className="text-center font-display">Pricelist</h3>
+				<h3 className="text-center font-display">Daftar Harga</h3>
 
 				<div className="container mx-auto">
 					<div className="lg:hidden">

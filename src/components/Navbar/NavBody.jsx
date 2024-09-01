@@ -30,12 +30,12 @@ export default function NavBody() {
 	}
 
 	const listNavItems = [
-		{ label: "Home", url: "#" },
-		{ label: "Service", url: "#service" },
-		{ label: "Facility", url: "#facility" },
-		{ label: "Pricelist", url: "#pricelist" },
-		{ label: "Gallery", url: "#gallery" },
-		{ label: "Contact", url: "#contact" },
+		{ label: "Beranda", url: "#" },
+		{ label: "Pelayanan", url: "#service" },
+		{ label: "Fasilitas", url: "#facility" },
+		{ label: "Daftar Harga", url: "#pricelist" },
+		{ label: "Galeri", url: "#gallery" },
+		{ label: "Kontak", url: "#contact" },
 	];
 
 	if (isMobile) {

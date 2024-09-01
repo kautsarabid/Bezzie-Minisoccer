@@ -4,7 +4,7 @@ export default function PriceListWeekEnd() {
 	return (
 		<>
 			<h5 className="text-4xl uppercase text-center font-semibold bg-secondary  text-white py-4 mb-6 lg:hidden">
-				Weekend
+				Hari Libur
 			</h5>
 
 			<div className="flex flex-wrap justify-center items-center gap-10  text-center mb-10">
@@ -23,7 +23,7 @@ export default function PriceListWeekEnd() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-secondary text-white"
 						}
 					>
-						Morning
+						Pagi
 					</Card.AdditionalStyle>
 				</Card>
 
@@ -45,7 +45,7 @@ export default function PriceListWeekEnd() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-secondary text-white"
 						}
 					>
-						Noon
+						Siang
 					</Card.AdditionalStyle>
 				</Card>
 
@@ -69,7 +69,7 @@ export default function PriceListWeekEnd() {
 							"absolute -top-3 font-bold border py-1 px-3 rounded-xl bg-secondary text-white"
 						}
 					>
-						Night
+						Malam
 					</Card.AdditionalStyle>
 
 					{/* <Card.AdditionalStyle
