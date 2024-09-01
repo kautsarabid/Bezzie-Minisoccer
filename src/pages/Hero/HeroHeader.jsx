@@ -14,10 +14,10 @@ export default function HeroHeader() {
 					BEZZIE MINISOCCER
 				</h4>
 				<p className="text-white text-sm w-3/4 md:w-full">
-					We are a home for small football enthusiasts with great spirit. At
-					Bezzie Minisoccer, we believe that minisoccer is not just about the
-					game, but also about igniting the spirit of friendship, teamwork, and
-					joy.
+					Kami adalah rumah bagi para pecinta sepak bola kecil dengan semangat
+					besar. Di Bezzie Minisoccer, kami percaya bahwa minisoccer bukan hanya
+					tentang permainan, tetapi juga tentang menyalakan semangat
+					persahabatan, kerja sama tim, dan kebahagiaan.
 				</p>
 			</div>
 
