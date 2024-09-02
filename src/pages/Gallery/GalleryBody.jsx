@@ -41,13 +41,13 @@ export default function GalleryBody() {
 			<h3 className="font-display text-center">Galeri</h3>
 
 			<div className="p-2 grid grid-cols-2 md:grid-cols-4 gap-2 md:p-4">
-				<div className="h-15 font-semibold md:col-start-4 md:row-start-2 md:flex">
+				{/* <div className="h-15 font-semibold md:col-start-4 md:row-start-2 md:flex">
 					<span className="self-center">Persfektif : Potret Bola Aceh</span>
 				</div>
 
 				<div className="h-15 font-semibold md:col-start-2 md:row-start-2 md:flex">
 					<span className="self-end">@bezzie.minisoccer</span>
-				</div>
+				</div> */}
 
 				<Gallery items={itemImage} />
 			</div>
