@@ -2,7 +2,7 @@ import List from "../../components/List";
 
 export default function FooterItemInformation() {
 	return (
-		<div className="relative flex flex-col justify-start items-start z-10 ">
+		<div className="relative flex flex-col justify-start items-start z-10 w-[20rem]">
 			<List.Title classTitle={"font-display text-4xl"}>Informasi</List.Title>
 
 			<List.Description

@@ -10,10 +10,10 @@ export default function FooterContact() {
 	)}`;
 
 	return (
-		<div className="z-10 relative">
+		<div className="z-10 relative w-[20rem] overflow-hidden">
 			<List.Title classTitle={"font-display text-4xl"}>Kontak</List.Title>
 
-			<div className="flex flex-col gap-5">
+			<div className="flex flex-col justify-start gap-8 pt-3 h-full">
 				<a
 					target="_blank"
 					href="https://www.instagram.com/bezzie.minisoccer/?hl=id"

@@ -8,7 +8,7 @@ import LogoBezzie from "../../assets/logo.webp";
 export default function FooterBody() {
 	return (
 		<div
-			className="mt-[64px] relative overflow-hidden bg-primary text-white py-12 px-16 xl:flex xl:gap-4 xl:justify-around"
+			className="mt-[64px] relative overflow-hidden bg-primary text-white py-7 px-16 xl:flex xl:gap-4 xl:justify-around"
 			id="contact"
 		>
 			<img
